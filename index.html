@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3 Kunlik Ob-havo Ilovasi</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome ikonkalari uchun -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="weather-card">
+        <!-- Qidiruv qismi -->
+        <div class="search-box">
+            <input type="text" id="city-input" placeholder="Shahar nomini kiriting..." spellcheck="false">
+            <button id="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+
+        <!-- Xatolik xabari -->
+        <div class="error" id="error-msg">
+            <p>Bunday shahar topilmadi!</p>
+        </div>
+
+        <!-- Asosiy ob-havo ma'lumotlari (Bugun) -->
+        <div class="weather-info" id="weather-info">
+            <div class="current-weather">
+                <img src="" alt="Ob-havo ikonka" class="weather-icon" id="weather-icon">
+                <h1 class="temp" id="temp">--°C</h1>
+                <h2 class="city" id="city-name">Shahar</h2>
+                <p class="condition" id="condition">---</p>
+                
+                <div class="details">
+                    <div class="col">
+                        <i class="fa-solid fa-water"></i>
+                        <div>
+                            <p class="humidity" id="humidity">--%</p>
+                            <p>Namlik</p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <i class="fa-solid fa-wind"></i>
+                        <div>
+                            <p class="wind" id="wind">-- km/h</p>
+                            <p>Shamol</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kelgusi kunlar prognozi (Ertaga va Undan keyingi kun) -->
+            <h3 class="forecast-title">Kelgusi kunlar prognozi</h3>
+            <div class="forecast-container" id="forecast-container">
+                <!-- JavaScript orqali dinamik ravishda to'ldiriladi -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
